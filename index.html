@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Hackathon 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #007cf0, #00dfd8);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+      position: relative;
+    }
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.3rem;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007cf0;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #e0f7ff;
+      border-radius: 5px;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideUp 1s ease-in-out;
+    }
+    h2 {
+      color: #007cf0;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover, .gallery video:hover {
+      transform: scale(1.05);
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background: #007cf0;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #005bb5;
+    }
+    footer {
+      background: #007cf0;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .icons {
+      margin-top: 1rem;
+    }
+    .icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .icons a:hover {
+      color: #ffd700;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#rules">Rules</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#register">Register</a>
+    <a href="#login">Login</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>College Hackathon 2025</h1>
+    <p>Innovate. Code. Win. 🚀</p>
+  </header>
+
+  <section id="about">
+    <h2>About the Hackathon</h2>
+    <p>This 24-hour coding event is focused on solving real-world problems through innovation and technology. Join developers, designers, and creators to build projects with impact. Mentors from top tech companies will guide participants during the event.</p>
+  </section>
+
+  <section id="rules">
+    <h2>Rules & Regulations</h2>
+    <ul>
+      <li>Teams must consist of 2-4 participants.</li>
+      <li>All code must be written during the event.</li>
+      <li>Open-source tools and APIs are allowed.</li>
+      <li>Submissions should be made before the deadline.</li>
+      <li>Maintain sportsmanship and ethical conduct.</li>
+      <li><strong>Prizes:</strong></li>
+      <ul>
+        <li>🥇 ₹25,000 - 1st Place</li>
+        <li>🥈 ₹15,000 - 2nd Place</li>
+        <li>🥉 ₹10,000 - 3rd Place</li>
+      </ul>
+    </ul>
+  </section>
+
+  <section id="facilities">
+    <h2>Participant Facilities</h2>
+    <ul>
+      <li>High-speed Wi-Fi and 24x7 power</li>
+      <li>Unlimited coffee and snacks</li>
+      <li>Dedicated rest area and sleeping bags</li>
+      <li>Technical support and mentoring sessions</li>
+      <li>Swag kit: T-shirt, notepad, pens</li>
+    </ul>
+  </section>
+
+  <section id="register">
+    <h2>Register Now</h2>
+    <form>
+      <input type="text" placeholder="Team Name" required />
+      <input type="email" placeholder="Team Leader Email" required />
+      <input type="text" placeholder="Phone Number" required />
+      <textarea placeholder="Team Members Details (Name, Email)" rows="4"></textarea>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="image1.jpg" alt="Hackathon scene" />
+      <img src="image2.jpg" alt="Participants coding" />
+      <img src="image3.jpg" alt="Award ceremony" />
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Video Gallery</h2>
+    <div class="gallery">
+      <video controls src="video1.mp4"></video>~
+      <video controls src="video2.mp4"></video>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 College Hackathon. All Rights Reserved.</p>
+    <div class="icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
